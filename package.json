@@ -22,6 +22,7 @@
         "vue-tsc": "^1.2.0"
     },
     "dependencies": {
-        "vue-material-design-icons": "^5.2.0"
+        "vue-material-design-icons": "^5.2.0",
+        "vue3-carousel": "^0.3.1"
     }
 }

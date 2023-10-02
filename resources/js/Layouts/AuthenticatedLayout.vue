@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import MapMarkerOutlineIcon from "vue-material-design-icons/MapMarkerOutline.vue";
 import MenuDownIcon from "vue-material-design-icons/MenuDown.vue";
+import MenuIcon from "vue-material-design-icons/Menu.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
 import CartMinusIcon from "vue-material-design-icons/CartMinus.vue";
 import { Link } from "@inertiajs/vue3";
@@ -155,7 +156,78 @@ const showingNavigationDropdown = ref(false);
             </div>
         </header>
 
-        <main>
+        <div
+            class="flex justify-between items-center bg-[#232f3e] h-[38px] fixed z-40 min-w-[1150px] w-full mt-[60px]"
+        >
+            <div class="flex">
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <MenuIcon
+                            fillColor="#F5F5F5"
+                            :size="26"
+                            class="mr-0.5"
+                        />
+                        <div class="text-[14px] text-white font-extrabold">
+                            All
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <div class="text-[14px] text-white font-extrabold">
+                            Today's Deals
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <div class="text-[14px] text-white font-extrabold">
+                            Gift cards
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <div class="text-[14px] text-white font-extrabold">
+                            Buy again
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <div class="text-[14px] text-white font-extrabold">
+                            Customer Service
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div
+                    class="flex h-[30px] border border-[#232f3e] rounded-sm hover:border hover:border-gray-100 cursor-pointer"
+                >
+                    <div class="flex justify-between items-center px-2">
+                        <div class="text-[14px] text-white font-extrabold">
+                            Holiday Fasion Deals
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="max-w-[1500px] mx-auto">
             <div class="pt-[98px]"></div>
             <slot />
         </main>
