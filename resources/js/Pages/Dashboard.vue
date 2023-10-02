@@ -14,7 +14,7 @@ import { Carousel, Navigation, Slide } from "vue3-carousel";
                 <div class="carousel__item">
                     <img
                         id="slider"
-                        :src="`images/carousel/slide${slide}.jpg`"
+                        :src="`/images/carousel/slide${slide}.jpg`"
                         alt=""
                     />
                 </div>
