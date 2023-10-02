@@ -136,7 +136,7 @@ const showingNavigationDropdown = ref(false);
                     class="relative uppercase h-[50px] px-2 cursor-pointer border border-gray-900 rounded-sm hover:border hover:border-gray-100"
                 >
                     <span
-                        class="absolute text-center right-[21px] w-[14px] -top-0 rounded-full text-[20px]"
+                        class="absolute text-center right-[21px] w-[14px] -top-2 rounded-full text-[20px]"
                     >
                         <div
                             class="text-orange-400 font-extrabold bg-gray-900 h-[16px]"
@@ -154,5 +154,83 @@ const showingNavigationDropdown = ref(false);
                 </div>
             </div>
         </header>
+
+        <main>
+            <div class="pt-[98px]"></div>
+            <slot />
+        </main>
+
+        <div class="w-full bg-white mt-10">
+            <div class="max-w-[1500px] mx-auto">
+                <div class="text-[23px] pt-4 font-extrabold">
+                    Recommended based on your shopping trends
+                </div>
+                <div class="flex justify-center items-stretch">
+                    <div class="p-4 text-center mx-auto">
+                        <div class="w-[158px] h-[150px] overflow-hidden">
+                            <img
+                                src="https://via.placeholder.com/158x150"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="w-[160px] text-[12px] py-2 text-teal-600 font-extrabold hover:text-red-600 cursor-pointer"
+                        >
+                            This is a test title
+                        </div>
+                        <div class="flex justify-start">
+                            <div
+                                class="text-xs font-extrabold text-red-600 w-full text-left"
+                            >
+                                $99.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-[#232F3E]">
+            <div
+                class="bg-[#37475A] hover:bg-gray-600 w-full p-3.5 cursor-pointer text-white font-extrabold text-center"
+            >
+                Back to top
+            </div>
+            <div
+                class="flex items-stretch justify-between max-w-[1000px] mx-auto text-white p-10"
+            >
+                <ul>
+                    <li class="font-extrabold text-lg">Get to Know Us</li>
+                    <li class="hover:underline cursor-pointer">Carrers</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">
+                        Investor Relations
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="font-extrabold text-lg">Get to Know Us</li>
+                    <li class="hover:underline cursor-pointer">Carrers</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">
+                        Investor Relations
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="font-extrabold text-lg">Get to Know Us</li>
+                    <li class="hover:underline cursor-pointer">Carrers</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">About</li>
+                    <li class="hover:underline cursor-pointer">
+                        Investor Relations
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </template>
